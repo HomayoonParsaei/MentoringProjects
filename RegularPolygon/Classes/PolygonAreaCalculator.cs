@@ -10,8 +10,8 @@ namespace RegularPolygon.Classes
             set { NumberOfEdges = value; }
         }
 
-        private uint _sideLength;
-        public uint SideLenght
+        private double _sideLength;
+        public double SideLenght
         {
             set { SideLenght = value; }
         }
@@ -22,7 +22,7 @@ namespace RegularPolygon.Classes
             get { return _area; }
         }
 
-        public double CalculateArea(uint NumberOfEdges, uint SideLenght)
+        public double CalculateArea(uint NumberOfEdges, double SideLenght)
         {
             return _area = NumberOfEdges * Math.Pow(SideLenght, 2) / (4 * Math.Tan(Math.PI / NumberOfEdges));
         }

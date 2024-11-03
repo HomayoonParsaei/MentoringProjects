@@ -10,19 +10,19 @@ namespace RegularPolygon.Classes
             set { NumberOfEdges = value; }
         }
 
-        private uint _sideLength;
-        public uint SideLenght
+        private double _sideLength;
+        public double SideLenght
         {
             set { SideLenght = value; }
         }
 
-        private uint _perimeter;
-        public uint Perimeter
+        private double _perimeter;
+        public double Perimeter
         {
             get { return _perimeter; }
         }
 
-        public uint CalculatePerimeter(uint NumberOfEdges, uint SideLenght)
+        public double CalculatePerimeter(uint NumberOfEdges, double SideLenght)
         {
             return _perimeter = NumberOfEdges * SideLenght;
         }
