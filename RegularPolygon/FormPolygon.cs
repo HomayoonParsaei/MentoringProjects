@@ -30,13 +30,26 @@ namespace RegularPolygon
             {
                 numberOfEdge = (uint)(PolygonName)Enum.Parse(typeof(PolygonName), comboBoxPolygoneType.Text);
                 sideLenght = double.Parse(textBoxSideLength.Text);
-
-                PolygonPerimeterCalculator polygonPerimeterCalculator = new PolygonPerimeterCalculator();
+                var c = new Circle();
+                var r = new Rectangle();
+                switch (numberOfEdge)
+                {
+                    case 1:
+                        c.CalculateArea();
+                        c.CalculatePerimeter();
+                        break;
+                    case 2:
+                        r.CalculatePerimeter();
+                        r.CalculateArea();
+                        break;
+                }
+                
+                var polygonPerimeterCalculator = new PolygonPerimeterCalculator();
                 polygonPerimeterCalculator.CalculatePerimeter(numberOfEdge, sideLenght);
                 labelPolygonPerimeter.Visible = true;
                 labelPolygonPerimeter.Text = $"Perimeter = {polygonPerimeterCalculator.Perimeter:F2} ";
 
-                PolygonAreaCalculator polygonAreaCalculator = new PolygonAreaCalculator();
+                var polygonAreaCalculator = new PolygonAreaCalculator();
                 polygonAreaCalculator.CalculateArea(numberOfEdge, sideLenght);
                 lablePolygonArea.Visible = true;
                 lablePolygonArea.Text = $"Area = {polygonAreaCalculator.Area:F2}";
