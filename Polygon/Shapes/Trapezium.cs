@@ -1,7 +1,7 @@
-﻿using RegularPolygon.Interfaces;
-using System.Threading.Tasks;
+﻿using Polygon.Interfaces;
 
-namespace RegularPolygon;
+
+namespace Polygon.Shapes;
 
 public class Trapezium : ICalculateParameters
 {

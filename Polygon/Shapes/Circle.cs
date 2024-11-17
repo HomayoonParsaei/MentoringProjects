@@ -1,7 +1,7 @@
-﻿using RegularPolygon.Interfaces;
+﻿using Polygon.Interfaces;
 using System;
 
-namespace RegularPolygon.Shapes;
+namespace Polygon.Shapes;
 
 public class Circle : ICalculateParameters
 {
@@ -19,4 +19,5 @@ public class Circle : ICalculateParameters
     {
         return Perimeter = pi * Radius * Radius;//Math.Pow(Radius, 2)
     }
+
 }

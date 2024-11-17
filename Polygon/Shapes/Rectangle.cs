@@ -1,6 +1,6 @@
-﻿using RegularPolygon.Interfaces;
+﻿using Polygon.Interfaces;
 
-namespace RegularPolygon.Shapes;
+namespace Polygon.Shapes;
 
 public class Rectangle : ICalculateParameters
 {

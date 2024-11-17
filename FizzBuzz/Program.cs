@@ -1,11 +1,28 @@
 ﻿
 using FizzBuzz;
+while (true) 
+{
+    Console.Write("Plese enter the number : ");
 
-Console.WriteLine("Plese entter the number");
+    DivisibilityChecker.InputNumber = int.Parse(Console.ReadLine());
+    var fizz = DivisibilityChecker.IsDivisibleBy3();
+    var buzz = DivisibilityChecker.IsDivisibleBy5();
 
-DivisibilityChecker.InputNumber = int.Parse(Console.ReadLine());
-var fizz = DivisibilityChecker.IsDivisibleBy3();
-var buzz =DivisibilityChecker.IsDivisibleBy5();
-FizzBuzzResult(fizz,buzz);
+    if (fizz && buzz)
+    {
+        Console.WriteLine("FizzBuzz!\n");
+    }
 
-FizzBuzzResult
+    else if (buzz)
+    {
+        Console.WriteLine("Buzz!\n");
+    }
+    else if (fizz)
+    {
+        Console.WriteLine("Fizz!\n");
+    }
+    else
+    {
+        Console.WriteLine("No FizzBuzz!!\n");
+    }
+}

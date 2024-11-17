@@ -1,6 +1,6 @@
-﻿using RegularPolygon.Interfaces;
+﻿using Polygon.Interfaces;
 
-namespace RegularPolygon;
+namespace Polygon.Shapes;
 
 public class Square : ICalculateParameters
 {

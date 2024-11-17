@@ -1,6 +1,7 @@
-﻿using RegularPolygon.Interfaces;
+﻿using Polygon.Interfaces;
+using System;
 
-namespace RegularPolygon;
+namespace Polygon.Shapes;
 
 public class Triangle : ICalculateParameters
 {
@@ -20,4 +21,6 @@ public class Triangle : ICalculateParameters
     {
         return Perimeter = (Base + FirstSide + SecondSide);
     }
+
+
 }

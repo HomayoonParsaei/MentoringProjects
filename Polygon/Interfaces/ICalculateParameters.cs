@@ -1,4 +1,4 @@
-﻿namespace RegularPolygon.Interfaces;
+﻿namespace Polygon.Interfaces;
 
 public interface ICalculateParameters
 {
