@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polygon", "Polygon\Polygon.csproj", "{64BA8E5A-8E4C-49C5-A15E-A98965BF045B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{C7D5B48D-F061-4382-BC35-09C5C4071BEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{C75E5639-2FA3-4080-998F-B65000BD7F68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{64BA8E5A-8E4C-49C5-A15E-A98965BF045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64BA8E5A-8E4C-49C5-A15E-A98965BF045B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64BA8E5A-8E4C-49C5-A15E-A98965BF045B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7D5B48D-F061-4382-BC35-09C5C4071BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7D5B48D-F061-4382-BC35-09C5C4071BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7D5B48D-F061-4382-BC35-09C5C4071BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7D5B48D-F061-4382-BC35-09C5C4071BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75E5639-2FA3-4080-998F-B65000BD7F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75E5639-2FA3-4080-998F-B65000BD7F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75E5639-2FA3-4080-998F-B65000BD7F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75E5639-2FA3-4080-998F-B65000BD7F68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
