@@ -1,4 +1,5 @@
 ﻿using Polygon.Shapes;
+using RegularPolygon;
 
 while (true) // Infinite loop; will exit when user chooses
 {

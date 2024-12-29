@@ -1,28 +1,29 @@
-﻿
-using FizzBuzz;
-while (true) 
+﻿using FizzBuzz;
+using System;
+using System.Collections.Generic;
+
+class Program
 {
-    Console.Write("Plese enter the number : ");
+    static void Main(string[] args)
+    {
+        List<IDivisibilityChecker> checkers = new List<IDivisibilityChecker>
+        {
+            new FizzChecker(),
+            new BuzzChecker()
+           // new FizzBuzzChecker()
+        };
 
-    DivisibilityChecker.InputNumber = int.Parse(Console.ReadLine());
-    var fizz = DivisibilityChecker.IsDivisibleBy3();
-    var buzz = DivisibilityChecker.IsDivisibleBy5();
+        for (int i = 1; i <= 100; i++)
+        {
+            string result = string.Empty;
 
-    if (fizz && buzz)
-    {
-        Console.WriteLine("FizzBuzz!\n");
-    }
+            foreach (var checker in checkers)
+            {
+                result += checker.IsDividable(i);
+            }
 
-    else if (buzz)
-    {
-        Console.WriteLine("Buzz!\n");
-    }
-    else if (fizz)
-    {
-        Console.WriteLine("Fizz!\n");
-    }
-    else
-    {
-        Console.WriteLine("No FizzBuzz!!\n");
+            Console.WriteLine(!string.IsNullOrEmpty(result) ? result : i.ToString());
+        }
     }
 }
+
